@@ -11,6 +11,8 @@ return array(
     # definir e gerenciar rotas
     'router' => array(
         'routes' => array(
+            
+            # literal para action index home
             'home' => array(
                 'type'      => 'Literal',
                 'options'   => array(
@@ -18,6 +20,18 @@ return array(
                     'defaults' => array(
                         'controller' => 'HomeController',
                         'action'     => 'index',
+                    ),
+                ),
+            ),
+
+            # literal para action sobre home
+            'sobre' => array(
+                'type'      => 'Literal',
+                'options'   => array(
+                    'route'    => '/sobre',
+                    'defaults' => array(
+                        'controller' => 'HomeController',
+                        'action'     => 'sobre',
                     ),
                 ),
             ),
